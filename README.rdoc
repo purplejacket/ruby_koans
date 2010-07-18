@@ -33,12 +33,22 @@ installed. To check the installations simply type:
 
 Windows from the command prompt (cmd.exe)
 
-   c:\ruby --version 
-   c:\rake --version
+   c:\>ruby --version 
+   c:\>rake --version
    
 Any response for Ruby with a version number greater than 1.8 is fine (should be 
-around 1.8.6 or more). Any version of rake will do.  
+around 1.8.6 or more). Any version of rake will do. 
 
+If you are using Ruby 1.9 or greater, please install the test-unit gem:
+
+*nix platforms
+
+   [~] $ sudo gem install test-unit
+
+Windows (or unix platforms where you're not using sudo):
+
+   c:\>gem install test-unit
+   
 == The Path To Enlightenment
 
 You can run the tests through rake or by calling the file itself (rake is the
@@ -51,8 +61,8 @@ recommended way to run them as we might build more functionality into this task)
     
 Windows is the same thing
 
-    c:\ruby_koans\rake                             # runs the default target :walk_the_path
-    c:\ruby_koans\ruby path_to_enlightenment.rb    # simply call the file directly
+    c:\ruby_koans\>rake                             # runs the default target :walk_the_path
+    c:\ruby_koans\>ruby path_to_enlightenment.rb    # simply call the file directly
     
 === Red, Green, Refactor
 
