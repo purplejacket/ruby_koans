@@ -1,7 +1,7 @@
 require File.expand_path(File.join(File.dirname(__FILE__), 'edgecase'))
 
 # You need to write the triangle method in the file 'triangle.rb'
-require 'triangle.rb'
+require File.expand_path(File.join(File.dirname(__FILE__), 'triangle.rb'))
 
 class AboutTriangleAssignment2 < EdgeCase::Koan
   # The first assignment did not talk about how to handle errors.
